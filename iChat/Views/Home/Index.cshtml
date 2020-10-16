@@ -1,8 +1,64 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
-}
+    ViewData["Title"] = "Home Page";}
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="text-center" >
+    <div class="card bg-info" style="height:521px;">
+        <div class="card-header card bg-primary" >
+            Developers Group Chat
+        </div>
+
+        <div class="card-body" style="max-height: 80%;overflow-y: auto;">
+            <div id="login">
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name"
+                                       aria-label="Name" aria-describedby="Name" id="Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Surname"
+                                       aria-label="Surname" aria-describedby="Surname" id="Surname">
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Username"
+                                   aria-label="Username" aria-describedby="Username" id="Username">
+                        </div>
+
+                        <button type="button" class="form-control btn btn-success" id="loginButton">Start Chat</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chat" style="display:none;height:100%">
+                <div class="row">
+                    <div id="welcome" class="col-md-12">
+
+                    </div>
+
+                    <div id="messageList" class="col-md-12">
+
+                    </div>
+                    <div id="newMessage" class="col-md-12" style="position: absolute;bottom: 10px;">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="messageInput"
+                                       placeholder="Enter Message" />
+                            </div>
+                            <div class="col-md-3">
+                                <input type="button" id="sendButton" class="form-control btn btn-success" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
